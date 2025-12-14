@@ -1,63 +1,46 @@
-# Marcar Bot Suite (RZSISTEMA)
+# Bots para Discord (RZSISTEMA)
 
-Bem-vindo à suíte de automação do Discord **Marcar Bot**. Este projeto contém três ferramentas poderosas para gerenciamento e divulgação em servidores Discord, desenvolvidas com foco em eficiência e visual profissional.
+Bem-vindo à coleção oficial de bots da **RZSISTEMA**. Esta suíte contém ferramentas essenciais para administração e engajamento.
 
 ![Bot Interface Mockup](./assets/mockup.png)
 
 ## 🚀 Ferramentas Incluídas
 
-### 1. Marcador de Pessoas (`index.js`)
+### 1. Marcador de Pessoas (`marcapessoa.js`)
 
-Este script é focado em **atacar** a visibilidade. Ao ser iniciado, ele imediatamente:
+- **Função**: Menciona todos os membros (humanos) do servidor.
+- **Visual**: Embed Azul "Mensagem de Teste".
+- **Comando**: `node marcapessoa.js`
 
-- Identifica todos os usuários do canal alvo.
-- Marca todos eles em blocos otimizados.
-- Envia um painel (Embed) visual no início e no fim.
+### 2. Marcador de Cargos (`marcacargo.js`)
 
-**Comando:**
+- **Função**: Lista e menciona todos os Cargos (Roles).
+- **Visual**: Embed Laranja "SISTEMA DE CARGOS".
+- **Comando**: `node marcacargo.js`
 
-```bash
-node index.js
-```
+### 3. Contador de Membros (`contador.js`)
 
-### 2. Marcador de Cargos (`cargos.js`)
+- **Função**: Cria/Atualiza um **Canal de Voz** no topo do servidor mostrando o total de membros (ex: `📊 Membros: 250`).
+- **Log**: Envia um Embed Ciano confirmando a atualização.
+- **Comando**: `node contador.js`
 
-Similar ao anterior, mas focado em **Cargos (Roles)**. Ideal para avisos globais que precisam pingar roles específicas ou todas elas.
+### 4. RZLIMPEZA (`limpar.js`)
 
-- Lista e marca todos os cargos do servidor.
-- Painel visual laranja personalizado.
+- **Função**: Faxina completa do chat com backup.
+- **Segurança**: Salva log em `#logs-chat` antes de apagar.
+- **Visual**: Embed Roxo "RZLIMPEZA" com banner animado.
+- **Comando**: `node limpar.js`
 
-**Comando:**
+## 🛠️ Instalação Rápida
 
-```bash
-node cargos.js
-```
-
-### 3. RZLIMPEZA (`limpar.js`)
-
-O script de faxina definitiva.
-
-- **Backup Seguro**: Antes de apagar, ele salva todo o histórico do chat num arquivo `.txt`.
-- **Canal de Log**: Cria automaticamente um canal `#logs-chat` (se não existir) e envia o backup lá.
-- **Limpeza Total**: Apaga todas as mensagens do canal alvo.
-- **Assinatura**: Deixa um rastro visual ("A RRZLIMPEZA passou por aqui") com banner animado.
-
-**Comando:**
-
-```bash
-node limpar.js
-```
-
-## 🛠️ Configuração
-
-1.  **Instalação**:
-    - Tenha o Node.js instalado.
-    - Rode `npm install` na pasta do projeto.
-2.  **Configuração**:
-    - Crie um arquivo `.env` com seu Token: `DISCORD_TOKEN=SEU_TOKEN_AQUI`.
-    - No arquivo de cada script, configure o `TARGET_CHANNEL_ID` desejado.
-3.  **Intents**:
-    - Garanta que no Discord Developer Portal as opções **Presence**, **Server Members** e **Message Content** estejam ativadas.
+1.  **Baixe o projeto**:
+    ```bash
+    git clone https://github.com/RZSISTEMAs/bots-para-discord.git
+    cd bots-para-discord
+    ```
+2.  **Instale**: `npm install`
+3.  **Token**: Crie um arquivo `.env` com `DISCORD_TOKEN=SEU_TOKEN`.
+4.  **Rodar**: Escolha o script desejado e rode com `node nome_do_script.js` (ex: `node marcapessoa.js`).
 
 ## 📞 Suporte
 
