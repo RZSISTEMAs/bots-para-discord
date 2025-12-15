@@ -31,6 +31,12 @@ Bem-vindo à coleção oficial de bots da **RZSISTEMA**. Esta suíte contém fer
 - **Visual**: Embed Roxo "RZLIMPEZA" com banner animado.
 - **Comando**: `node limpar.js`
 
+### 5. Active Badge (`badge.js`)
+
+- **Função**: Registra Comandos Slash (`/verificar`, `/activedevbadge`) para insígnia de Dev.
+- **Log**: Responde no canal configurado com Embed Dourado.
+- **Comando**: `node badge.js`
+
 ## 🛠️ Instalação Rápida
 
 1.  **Baixe o projeto**:
