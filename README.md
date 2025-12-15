@@ -37,6 +37,16 @@ Bem-vindo à coleção oficial de bots da **RZSISTEMA**. Esta suíte contém fer
 - **Log**: Responde no canal configurado com Embed Dourado.
 - **Comando**: `node badge.js`
 
+### 6. Quiz Trivia (`jogo.js`)
+
+- **Função**: Jogo de Perguntas e Respostas com Ranking.
+- **Log**: Canal restrito, 100 perguntas, ganha quem responder primeiro.
+- **Comandos**:
+  - `/comecarjogo`: Inicia.
+  - `/pararjogo`: Cancela imediatamente.
+  - `/finalizarjogo`: Encerra e mostra o pódio.
+  - `/pontuacao`: Vê o placar atual.
+
 ## 🛠️ Instalação Rápida
 
 1.  **Baixe o projeto**:
