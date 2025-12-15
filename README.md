@@ -42,10 +42,26 @@ Bem-vindo à coleção oficial de bots da **RZSISTEMA**. Esta suíte contém fer
 - **Função**: Jogo de Perguntas e Respostas com Ranking.
 - **Log**: Canal restrito, 100 perguntas, ganha quem responder primeiro.
 - **Comandos**:
+
   - `/comecarjogo`: Inicia.
   - `/pararjogo`: Cancela imediatamente.
   - `/finalizarjogo`: Encerra e mostra o pódio.
   - `/pontuacao`: Vê o placar atual.
+
+- **Comandos**:
+  - `/comecarjogo`: Inicia.
+  - `/pararjogo`: Cancela imediatamente.
+  - `/finalizarjogo`: Encerra e mostra o pódio.
+  - `/pontuacao`: Vê o placar atual.
+
+### 7. RZSISTEMA Admin Suite (`painel.js`)
+
+- **Painel Central**: Digite `/painel` para abrir o Dashboard.
+- **Módulos**:
+  - **📢 Criador 2.0**: Mensagens com Embed, Imagem, Thumbnail, Rodapé e Botões Interativos.
+  - **🛡️ Moderação**: Ferramentas visuais para Banir, Expulsar e Limpar Chat.
+- **Segurança**: Requer Cargo ID `1437609235943919636`.
+- **Comando**: `node painel.js`
 
 ## 🛠️ Instalação Rápida
 
